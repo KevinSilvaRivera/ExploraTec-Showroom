@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <header id="navbar"></header>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <main>
+        <h1 class="nombre">ExploraTec: Showroom</h1>
+        <section class="inicio">
+            <div class="campus CIITIC">
+                <figure>
+                    <a href="campus-citic.html"><img class="img-campus" src="https://imgs.search.brave.com/iBnLB36tkhMoNcfjKIGgRrBqtPipENdd5s8kwl23AkE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMubmF0aW9uYWxn/ZW9ncmFwaGljLmVz/L2ZpbGVzL3N0eWxl/cy9pbWFnZV8zMjAw/L3B1YmxpYy83NTU1/Mi5uZ3N2ZXJzaW9u/LjE0MjIyODU1NTMz/NjAuanBnP3c9MTYw/MCZoPTEwNjc"
+                            alt="imagen-campus-cittic"></a>
+                </figure>
+                <span>Campus CITIC</span>
+            </div>
+            <div class="campus CIDEC">
+                <figure>
+
+                    <img class="img-campus" src="https://imgs.search.brave.com/iBnLB36tkhMoNcfjKIGgRrBqtPipENdd5s8kwl23AkE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMubmF0aW9uYWxn/ZW9ncmFwaGljLmVz/L2ZpbGVzL3N0eWxl/cy9pbWFnZV8zMjAw/L3B1YmxpYy83NTU1/Mi5uZ3N2ZXJzaW9u/LjE0MjIyODU1NTMz/NjAuanBnP3c9MTYw/MCZoPTEwNjc"
+                        alt="imagen-campus-cidec">
+                </figure>
+                <span>Campus CIDEC</span>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
