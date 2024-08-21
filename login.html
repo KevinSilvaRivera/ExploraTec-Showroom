@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploraTec - Login</title>
+    <link rel="stylesheet" href="CSS/styles-login.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <header id="navbar"></header>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <main>
+        <div class="container">
+            <div class="info">
+                <h1>INICIAR SESION</h1>
+                <span> TECNM <i class="fa fa-heart"></i> by <a href="http://andytran.me"> KSR & DGPL</a></span>
+            </div>
+            <div class="form">
+                <div class="thumbnail">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/hat.svg" />
+                </div>
+                <!-- <form class="register-form">
+                    <input type="text" placeholder="name" />
+                    <input type="password" placeholder="password" />
+                    <input type="text" placeholder="email address" />
+                    <button>create</button>
+                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                </form> -->
+                <form class="login-form">
+                    <input type="text" placeholder="Nombre" />
+                    <input type="password" placeholder="Contraseña" />
+                    <button>login</button>
+                    <p class="message">No estas registrado? <a href="#">Crear cuenta nueva</a></p>
+                </form>
+            </div>
+        </div>
+
+        <video id="video" autoplay loop poster="#">
+            <source src="img/221180_tiny.mp4" type="video/mp4">
+        </video>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
